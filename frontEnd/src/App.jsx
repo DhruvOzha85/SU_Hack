@@ -9,8 +9,8 @@ import AuthInterface from "./components/AuthInterface";
 import SubscriptionInterface from "./components/SubscriptionInterface";
 import CropPredictionInterface from "./components/CropPredictionInterface";
 import { regionOptions } from "./data/options";
-
-const API_BASE_URL = "/api/recommend-crop";
+const BASE_URL = import.meta.env.VITE_API_URL || "";
+const API_BASE_URL = `${BASE_URL}/api/recommend-crop`;
 
 const defaultFormState = {
   state: "Andhra Pradesh",
@@ -166,7 +166,7 @@ function App() {
         data.files.photos?.field ||
         Object.values(data.files.photos || {}).find(Boolean);
 
-      const healthResponse = await axios.post("/api/crop-health/analyze", formData);
+      const healthResponse = await axios.post(`${BASE_URL}/api/crop-health/analyze`, formData);
       let diseaseResponse = null;
 
       if (selectedImage) {
@@ -174,7 +174,7 @@ function App() {
         diseaseFormData.append("image", selectedImage);
 
         try {
-          diseaseResponse = await axios.post("/api/detect-disease", diseaseFormData);
+          diseaseResponse = await axios.post(`${BASE_URL}/api/detect-disease`, diseaseFormData);
         } catch (_error) {
           diseaseResponse = {
             data: {
@@ -228,7 +228,7 @@ function App() {
       Object.keys(data.files.photos || {}).forEach((key) => formData.append(`photo_${key}`, data.files.photos[key]));
       formData.append("answers", JSON.stringify(data.answers));
 
-      const response = await axios.post("/api/harvest/analyze", formData);
+      const response = await axios.post(`${BASE_URL}/api/harvest/analyze`, formData);
       setHarvestResult(response.data);
 
       const session = {
@@ -260,7 +260,7 @@ function App() {
       Object.keys(data.files.photos || {}).forEach((key) => formData.append(`photo_${key}`, data.files.photos[key]));
       formData.append("answers", JSON.stringify(data.answers));
 
-      const response = await axios.post("/api/selling/analyze", formData);
+      const response = await axios.post(`${BASE_URL}/api/selling/analyze`, formData);
       setSellingResult(response.data);
 
       const session = {
@@ -290,7 +290,7 @@ function App() {
     }
     setPredictionLoading(true);
     try {
-      const response = await axios.post("/api/crop-prediction", params);
+      const response = await axios.post(`${BASE_URL}/api/crop-prediction`, params);
       setPrediction(response.data);
     } catch (error) {
       console.error("Prediction failed", error);

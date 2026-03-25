@@ -47,7 +47,7 @@ function SchemesInterface({ currentPhase, onPhaseChange, user, onLogout }) {
     if (search.trim()) params.search = search.trim();
 
     axios
-      .get("/api/schemes", { params })
+      .get(`${import.meta.env.VITE_API_URL || ""}/api/schemes`, { params })
       .then((res) => {
         if (!ignore) {
           setSchemes(res.data.schemes || []);

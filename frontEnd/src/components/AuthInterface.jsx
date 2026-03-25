@@ -5,8 +5,7 @@ import {
   CloudSun, Zap, BarChart3, Shield, Leaf, TrendingUp, ArrowRight
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-
-const API_AUTH_URL = "/api/auth";
+const API_AUTH_URL = `${import.meta.env.VITE_API_URL || ""}/api/auth`;
 
 function AuthInterface({ onLogin }) {
   const { t } = useTranslation();
