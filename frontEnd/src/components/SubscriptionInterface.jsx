@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import PhaseNavigation from "./PhaseNavigation";
 
-const PAYMENT_UPI_ID = "croppilot@upi";
+const PAYMENT_UPI_ID = "seed2success@upi";
 
 const SUBSCRIPTION_PLANS = [
   {
@@ -43,7 +43,7 @@ const SUBSCRIPTION_PLANS = [
 ];
 
 function buildQrUrl(plan) {
-  const upiPayload = `upi://pay?pa=${PAYMENT_UPI_ID}&pn=CropPilot&am=${plan.price}&cu=INR&tn=${encodeURIComponent(`${plan.name} Plan`)}`;
+  const upiPayload = `upi://pay?pa=${PAYMENT_UPI_ID}&pn=Seed2Success&am=${plan.price}&cu=INR&tn=${encodeURIComponent(`${plan.name} Plan`)}`;
   return `https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=${encodeURIComponent(upiPayload)}`;
 }
 
@@ -142,7 +142,7 @@ function SubscriptionInterface({
                 <Menu size={20} />
               </button>
               <div>
-                <h2 className="text-[15px] sm:text-lg font-display font-bold text-gray-900">Choose Your CropPilot Plan</h2>
+                <h2 className="text-[15px] sm:text-lg font-display font-bold text-gray-900">Choose Your Seed2Success Plan</h2>
                 <p className="text-[12px] text-gray-500">Select a subscription and complete payment with QR scan.</p>
               </div>
             </div>

@@ -19,7 +19,7 @@ try {
 
 const router = express.Router();
 
-const JWT_SECRET = process.env.JWT_SECRET || "croppilot_jwt_fallback_secret";
+const JWT_SECRET = process.env.JWT_SECRET || "seed2success_jwt_fallback_secret";
 const JWT_EXPIRES_IN = "7d";
 
 function base64Url(input) {

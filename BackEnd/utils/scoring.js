@@ -1,5 +1,5 @@
 /**
- * CropPilot — Crop Scoring Engine
+ * Seed2Success — Crop Scoring Engine
  * 
  * Scoring Weights:
  *   Weather suitability → 30%

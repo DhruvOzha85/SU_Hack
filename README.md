@@ -1,4 +1,4 @@
-# CropPilot – AI Powered Agriculture Intelligence Platform
+# Seed2Success – AI Powered Agriculture Intelligence Platform
 
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=30&pause=1000&color=2ECC71&center=true&vCenter=true&width=700&lines=AI+Powered+Agriculture+Platform;Remote+Sensing+Based+Crop+Prediction;Plant+Disease+Analysis+with+AI;Precision+Farming+Technology"/>
@@ -12,7 +12,7 @@ AI Powered Platform for Smart Farming and Crop Yield Intelligence
 
 ## Project Overview
 
-CropPilot is an **AI-powered agriculture platform** developed to assist farmers, researchers, and agricultural professionals in making **data-driven farming decisions** using **Artificial Intelligence , and Data Analytics**.
+Seed2Success is an **AI-powered agriculture platform** developed to assist farmers, researchers, and agricultural professionals in making **data-driven farming decisions** using **Artificial Intelligence , and Data Analytics**.
 
 The system analyzes crop images, environmental data, and satellite information to provide **crop detection, plant disease analysis, and crop yield prediction** through a modern web interface.
 
@@ -28,7 +28,7 @@ The goal of the platform is to support **smart farming practices in semi-arid ag
 
 How can **remote sensing and artificial intelligence** be used to **predict crop yield and optimize farming practices in Rajasthan's semi-arid regions**?
 
-CropPilot addresses this challenge by combining:
+Seed2Success addresses this challenge by combining:
 
 * Satellite data and remote sensing
 * Artificial intelligence models
@@ -41,7 +41,7 @@ These technologies enable **early insights about crop health and expected yield*
 
 ## AI Capabilities
 
-CropPilot integrates advanced artificial intelligence models for:
+Seed2Success integrates advanced artificial intelligence models for:
 
 * Crop classification
 * Plant disease detection
@@ -110,7 +110,7 @@ The platform uses a **React + Vite based frontend** to deliver a responsive and 
 ## Project Structure
 
 ```
-CropPilot
+Seed2Success
 │
 ├── frontend
 │   ├── src
@@ -141,8 +141,8 @@ CropPilot
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/CropPilot.git
-cd CropPilot
+git clone https://github.com/your-username/Seed2Success.git
+cd Seed2Success
 ```
 
 ---
@@ -214,7 +214,7 @@ Screenshots of the platform interface can be added here.
 
 ## Use Cases
 
-CropPilot can support multiple agricultural stakeholders including:
+Seed2Success can support multiple agricultural stakeholders including:
 
 * Farmers monitoring crop health
 * Agricultural researchers studying crop patterns
@@ -257,5 +257,5 @@ Steps to contribute:
 ---
 
 <p align="center">
-CropPilot | AI Driven Agriculture Intelligence Platform
+Seed2Success | AI Driven Agriculture Intelligence Platform
 </p>

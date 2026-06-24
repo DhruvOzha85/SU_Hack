@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "CropPilot",
+    "appName": "Seed2Success",
     "tagline": "Crop Intelligence",
     "builtFor": "Built for Indian Farmers 🇮🇳",
     "poweredBy": "Powered by Open-Meteo Weather API",
@@ -103,9 +103,9 @@
     "recentPlans": "Recent Plans",
     "noSessions": "No sessions yet",
     "noSessionsDesc": "Run your first analysis above",
-    "heroTag": "CropPilot — Decision Engine",
+    "heroTag": "Seed2Success — Decision Engine",
     "heroTitle": "Grow smarter, harvest better",
-    "heroDesc": "Enter your farm details below and CropPilot will analyse real-time weather, evaluate 25 crops, and recommend the top 3 best-fit options for your farm."
+    "heroDesc": "Enter your farm details below and Seed2Success will analyse real-time weather, evaluate 25 crops, and recommend the top 3 best-fit options for your farm."
   },
   "input": {
     "farmLocation": "Farm Location",

@@ -26,21 +26,21 @@ const defaultFormState = {
 
 function App() {
   // Auth state
-  const [token, setToken] = useState(() => localStorage.getItem("croppilot_token"));
+  const [token, setToken] = useState(() => localStorage.getItem("seed2success_token"));
   const [user, setUser] = useState(() => {
-    try { return JSON.parse(localStorage.getItem("croppilot_user")); } catch { return null; }
+    try { return JSON.parse(localStorage.getItem("seed2success_user")); } catch { return null; }
   });
 
   function handleLogin(newToken, newUser) {
-    localStorage.setItem("croppilot_token", newToken);
-    localStorage.setItem("croppilot_user", JSON.stringify(newUser));
+    localStorage.setItem("seed2success_token", newToken);
+    localStorage.setItem("seed2success_user", JSON.stringify(newUser));
     setToken(newToken);
     setUser(newUser);
   }
 
   function handleLogout() {
-    localStorage.removeItem("croppilot_token");
-    localStorage.removeItem("croppilot_user");
+    localStorage.removeItem("seed2success_token");
+    localStorage.removeItem("seed2success_user");
     setToken(null);
     setUser(null);
   }
